@@ -7,4 +7,4 @@ RUN yum install -y sudo && \
 
 USER user
 
-CMD ["/bin/sleep infinity"]
+CMD ["sleep", "infinity"]
