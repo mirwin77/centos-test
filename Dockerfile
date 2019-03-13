@@ -7,4 +7,4 @@ RUN yum install -y sudo && \
 
 USER user
 
-#CMD ["su", "-", "user", "-c", "/bin/bash"]
+CMD ["/bin/bash"]
