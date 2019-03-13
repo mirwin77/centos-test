@@ -7,4 +7,4 @@ RUN yum install -y sudo && \
 
 USER user
 
-CMD ["cat"]
+CMD [exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"]
