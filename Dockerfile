@@ -5,4 +5,6 @@ RUN yum install -y sudo && \
     echo "user ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/user && \
     chmod 0440 /etc/sudoers.d/user
 
-CMD ["su", "-", "user", "-c", "/bin/bash"]
+USER user
+
+#CMD ["su", "-", "user", "-c", "/bin/bash"]
